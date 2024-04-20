@@ -70,17 +70,23 @@ const Intro = () => {
           Contact me here <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition"/>
         </Link>
         <a
-          className="group flex items-center bg-gray-50 px-7 py-3 gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
+          href="/Resume.pdf"
+          download
+          className="group flex items-center bg-gray-50 px-7 py-3 gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
         >
           Download Resume <HiDownload className="opacity-60 group-hover:translate-y-1 transition"/>
         </a>
         <a
-          className="flex items-center bg-gray-50 text-gray-700 p-4 gap-2 rounded-full"
+          href="https://www.linkedin.com/in/nickdunn2/"
+          target="_blank"
+          className="flex items-center bg-gray-50 text-gray-700 p-4 gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10"
         >
           <BsLinkedin/>
         </a>
         <a
-          className="flex items-center bg-gray-50 text-gray-700 p-4 gap-2 rounded-full"
+          href="https://github.com/nickdunn2"
+          target="_blank"
+          className="flex items-center bg-gray-50 text-gray-700 p-4 gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10"
         >
           <BsGithub/>
         </a>
