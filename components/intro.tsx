@@ -54,7 +54,7 @@ const Intro = () => {
         <span className="font-bold">full-stack developer</span> with{" "}
         <span className="font-bold">8 years</span> of experience. I enjoy
         building <span className="italic">sites, apps and APIs</span>. My focus is on{" "}
-        <span className="underline">server-driven UI</span>.
+        <span className="underline">JavaScript & TypeScript</span>.
       </motion.p>
 
       <motion.div
@@ -65,7 +65,7 @@ const Intro = () => {
       >
         <Link
           href="#contact"
-          className="flex items-center bg-gray-900 text-gray-50 px-7 py-3 gap-2 rounded-full"
+          className="flex items-center bg-gray-900 text-gray-50 px-7 py-3 gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
         >
           Contact me here <BsArrowRight/>
         </Link>
