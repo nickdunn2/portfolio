@@ -2,6 +2,10 @@
 
 import Image from "next/image"
 import { motion } from 'framer-motion'
+import Link from "next/link"
+import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs"
+import { HiDownload } from "react-icons/hi"
+import { FaGithubSquare } from "react-icons/fa"
 
 const Intro = () => {
   return (
@@ -23,7 +27,7 @@ const Intro = () => {
               height="192"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-gray-50 shadow-xl"
             />
           </motion.div>
           <motion.span
@@ -52,6 +56,35 @@ const Intro = () => {
         building <span className="italic">sites, apps and APIs</span>. My focus is on{" "}
         <span className="underline">server-driven UI</span>.
       </motion.p>
+
+      <motion.div
+        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.1 }}
+      >
+        <Link
+          href="#contact"
+          className="flex items-center bg-gray-900 text-gray-50 px-7 py-3 gap-2 rounded-full"
+        >
+          Contact me here <BsArrowRight/>
+        </Link>
+        <a
+          className="flex items-center bg-gray-50 px-7 py-3 gap-2 rounded-full"
+        >
+          Download Resume <HiDownload/>
+        </a>
+        <a
+          className="flex items-center bg-gray-50 text-gray-700 p-4 gap-2 rounded-full"
+        >
+          <BsLinkedin/>
+        </a>
+        <a
+          className="flex items-center bg-gray-50 text-gray-700 p-4 gap-2 rounded-full"
+        >
+          <BsGithub/>
+        </a>
+      </motion.div>
     </section>
   )
 }
