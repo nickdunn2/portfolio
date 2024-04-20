@@ -65,14 +65,14 @@ const Intro = () => {
       >
         <Link
           href="#contact"
-          className="flex items-center bg-gray-900 text-gray-50 px-7 py-3 gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group flex items-center bg-gray-900 text-gray-50 px-7 py-3 gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
         >
-          Contact me here <BsArrowRight/>
+          Contact me here <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition"/>
         </Link>
         <a
-          className="flex items-center bg-gray-50 px-7 py-3 gap-2 rounded-full"
+          className="group flex items-center bg-gray-50 px-7 py-3 gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
         >
-          Download Resume <HiDownload/>
+          Download Resume <HiDownload className="opacity-60 group-hover:translate-y-1 transition"/>
         </a>
         <a
           className="flex items-center bg-gray-50 text-gray-700 p-4 gap-2 rounded-full"
