@@ -6,7 +6,7 @@ import Project from "@/components/project"
 
 const Projects = () => {
   return (
-    <section>
+    <section id="projects" className="scroll-mt-28">
       <SectionHeader>My Projects</SectionHeader>
       <div>
         {
