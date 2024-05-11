@@ -12,7 +12,7 @@ import { experiencesData } from "@/lib/data"
 
 const Experience = () => {
   return (
-    <section id="experience">
+    <section id="experience" className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeader>My Experience</SectionHeader>
       <VerticalTimeline lineColor="">
         {
