@@ -29,10 +29,14 @@ const Contact = () => {
       <form className="mt-10 flex flex-col">
         <input
           type="email"
+          required
+          maxLength={500}
           className="h-14 px-4 rounded-lg borderBlack"
           placeholder="Your email"
         />
         <textarea
+          required
+          maxLength={500}
           className="h-52 my-3 p-4 rounded-lg borderBlack"
           placeholder="Your message"
         />
