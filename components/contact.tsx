@@ -4,6 +4,7 @@ import SectionHeader from "@/components/section-header"
 import { FaPaperPlane } from "react-icons/fa"
 import { motion } from "framer-motion"
 import { useSectionInView } from "@/lib/hooks"
+import { sendEmail } from "@/actions/sendEmail"
 
 const Contact = () => {
   const { ref } = useSectionInView('Contact')
@@ -12,7 +13,7 @@ const Contact = () => {
     <motion.section
       ref={ref}
       id="contact"
-      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
+      className="scroll-mt-28 mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -26,17 +27,22 @@ const Contact = () => {
         or through this form.
       </p>
 
-      <form className="mt-10 flex flex-col">
+      <form
+        className="mt-10 flex flex-col"
+        action={sendEmail}
+      >
         <input
           type="email"
+          name="senderEmail"
           required
           maxLength={500}
           className="h-14 px-4 rounded-lg borderBlack"
           placeholder="Your email"
         />
         <textarea
+          name="message"
           required
-          maxLength={500}
+          maxLength={5000}
           className="h-52 my-3 p-4 rounded-lg borderBlack"
           placeholder="Your message"
         />
