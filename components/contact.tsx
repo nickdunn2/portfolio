@@ -29,7 +29,9 @@ const Contact = () => {
 
       <form
         className="mt-10 flex flex-col"
-        action={sendEmail}
+        action={async (formData) => {
+          await sendEmail(formData)
+        }}
       >
         <input
           type="email"
