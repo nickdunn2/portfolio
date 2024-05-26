@@ -23,8 +23,11 @@ export const sendEmail = async (formData: FormData) => {
     }
   }
 
+  // This is of type CreateEmailResponse { data, error } from Resend, but it can't be imported.
+  let data
+
   try {
-    await resend.emails.send({
+    data = await resend.emails.send({
       from: "Portfolio Contact Form <onboarding@resend.dev>",
       to: 'nickdunn2@gmail.com',
       subject: 'New message from your portfolio',
@@ -36,4 +39,6 @@ export const sendEmail = async (formData: FormData) => {
       error: UtilFunctions.getErrorMessage(error),
     }
   }
+
+  return { data }
 }

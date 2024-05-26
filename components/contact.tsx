@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import { useSectionInView } from "@/lib/hooks"
 import { sendEmail } from "@/actions/sendEmail"
 import SubmitButton from "@/components/submit-button"
+import toast from "react-hot-toast"
 
 const Contact = () => {
   const { ref } = useSectionInView('Contact')
@@ -30,7 +31,16 @@ const Contact = () => {
       <form
         className="mt-10 flex flex-col"
         action={async (formData) => {
-          await sendEmail(formData)
+          const { data, error } = await sendEmail(formData)
+
+          // Resend can return an error without throwing, so need to check for data.error.
+          if (error || data?.error) {
+            toast.error(error ?? data.error?.message ?? 'Whoops! An error occurred. Please try again.')
+            return
+          }
+
+          toast.success('Email sent successfully!')
+          return
         }}
       >
         <input
