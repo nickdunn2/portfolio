@@ -1,6 +1,6 @@
 'use client'
 
-import React, { createContext, useState } from "react"
+import React, { createContext, useContext, useState } from "react"
 import type { SectionName } from "@/lib/types"
 
 type ActiveSectionContextProviderProps = {
@@ -14,7 +14,7 @@ type ActiveSectionContextType = {
   setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>
 }
 
-export const ActiveSectionContext = createContext<ActiveSectionContextType | null>(null)
+const ActiveSectionContext = createContext<ActiveSectionContextType | null>(null)
 
 const ActiveSectionContextProvider = ({ children }: ActiveSectionContextProviderProps) => {
   const [activeSection, setActiveSection] = useState<SectionName>('Home')
@@ -37,7 +37,7 @@ const ActiveSectionContextProvider = ({ children }: ActiveSectionContextProvider
 }
 
 export const useActiveSectionContext = () => {
-  const context = React.useContext(ActiveSectionContext)
+  const context = useContext(ActiveSectionContext)
   if (!context) {
     throw new Error('useActiveSectionContext must be used within an ActiveSectionContextProvider')
   }
