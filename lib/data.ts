@@ -1,10 +1,10 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import { LuGraduationCap, LuFileSpreadsheet } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import { RiJavascriptLine, RiReactjsFill } from "react-icons/ri"
 
 export const links = [
   {
@@ -35,28 +35,58 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Kansas State University",
+    location: "Manhattan, KS",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Graduated with a print journalism degree. I love both verbal and written communication 📝️, and " +
+      "I've been presently surprised at how much those skills have helped me in my coding career.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2008",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Right Angle Sports",
+    location: "Los Angeles, CA",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Research analyst for a sports gambling syndicate. Created and maintained various " +
+      "Excel spreadsheets with data from many websites, which made me curious on " +
+      "how to scrape the web... 🧐",
+    icon: React.createElement(LuFileSpreadsheet),
+    date: "2011-2015",
+  },
+  {
+    title: "Austin Coding Academy",
+    location: "Austin, TX",
+    description:
+      'Took 14 months of night classes at a "bootcamp" to learn software engineering fundamentals. 💻',
+    icon: React.createElement(LuGraduationCap),
+    date: "2015-2016",
+  },
+  {
+    title: "My First Coding Job",
+    location: "Austin, TX",
+    description:
+      "Quick internship to get real-world coding experience. Built a user profile section (using React and Django) " +
+      "for a fitness app ⌚ called Meretz.",
+    icon: React.createElement(RiReactjsFill),
+    date: "2016",
+  },
+  {
+    title: "Software Engineer",
+    location: "Austin, TX",
+    description:
+      "Started as a junior developer on the payments team at FloSports, and within a little over a year " +
+      "I was promoted and became the team lead. Upskilled in all things front-end.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2016-2020",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Senior Full-Stack Engineer",
+    location: "Austin, TX",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "I'm now a senior full-stack developer and team lead delivering server-driven UI endpoints for fully " +
+      "redesigned TV apps at FloSports. Using NestJS, Typescript & Redis.",
+    icon: React.createElement(RiJavascriptLine),
+    date: "2020-present",
   },
 ] as const;
 
@@ -95,6 +125,7 @@ export const skillsData = [
   "HTML",
   "CSS",
   "Tailwind",
+  "RxJS",
   "Git",
   "A/B Testing",
   "Server-Driven UI",
