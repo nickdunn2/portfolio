@@ -61,6 +61,14 @@ const Intro = () => {
         <span className="underline">JavaScript & TypeScript</span>.
       </motion.h1>
 
+      <motion.p
+        className="mb-8"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+      >
+        <span className="text-sm italic">This site was built with React, Next.js, Tailwind & Framer Motion.</span>
+      </motion.p>
+
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
