@@ -1,11 +1,10 @@
 import React from "react"
 import { CgWorkAlt } from "react-icons/cg"
 import { LuGraduationCap, LuFileSpreadsheet } from "react-icons/lu"
-import corpcommentImg from "@/public/corpcomment.png"
-import rmtdevImg from "@/public/rmtdev.png"
-import wordanalyticsImg from "@/public/wordanalytics.png"
 import tvRedesignImg from "@/public/tvRedesign.png"
 import varsityStandingsImg from "@/public/varsityStandings.png"
+import journalAppImg from "@/public/journalApp.png"
+import paymentFunnelImg from "@/public/paymentFunnel.png"
 import { RiJavascriptLine, RiReactjsFill } from "react-icons/ri"
 
 export const links = [
@@ -108,11 +107,18 @@ export const projectsData = [
     imageUrl: varsityStandingsImg,
   },
   {
-    title: "Word Analytics",
+    title: "AI-Powered Journal App",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A fun side project to better learn React and Next.js. Uses the OpenAI API and Langchain to assess the mood of journal entries.",
+    tags: ["React", "Next.js", "Prisma", "OpenAI", "Clerk", "MySQL"],
+    imageUrl: journalAppImg,
+  },
+  {
+    title: "Web Payment Funnel",
+    description:
+      "Built a new, simplified funnel for FloSports, featuring signup, plan selection and payment. Used A/B testing and Segment to reveal a multi-million dollar improvement.",
+    tags: ["Stripe", "A/B Test", "Angular", "RxJS", "Segment"],
+    imageUrl: paymentFunnelImg,
   },
 ] as const
 
