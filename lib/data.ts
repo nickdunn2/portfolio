@@ -1,9 +1,11 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { LuGraduationCap, LuFileSpreadsheet } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import React from "react"
+import { CgWorkAlt } from "react-icons/cg"
+import { LuGraduationCap, LuFileSpreadsheet } from "react-icons/lu"
+import corpcommentImg from "@/public/corpcomment.png"
+import rmtdevImg from "@/public/rmtdev.png"
+import wordanalyticsImg from "@/public/wordanalytics.png"
+import tvRedesignImg from "@/public/tvRedesign.png"
+import varsityStandingsImg from "@/public/varsityStandings.png"
 import { RiJavascriptLine, RiReactjsFill } from "react-icons/ri"
 
 export const links = [
@@ -31,7 +33,7 @@ export const links = [
     name: "Contact",
     hash: "#contact",
   },
-] as const;
+] as const
 
 export const experiencesData = [
   {
@@ -88,22 +90,22 @@ export const experiencesData = [
     icon: React.createElement(RiJavascriptLine),
     date: "2020-present",
   },
-] as const;
+] as const
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "TV App Redesign",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Lead API and BFF (back-end-for-front-end) developer for brand new TV apps (Roku, Android TV, AppleTV) at FloSports.",
+    tags: ["NestJS", "Redis", "Server-Driven UI", "TypeScript", "Jest"],
+    imageUrl: tvRedesignImg,
   },
   {
-    title: "rmtDev",
+    title: "Varsity.TV Standings",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Delivered a first-of-its-kind standings experience for the elite cheerleading community. The work included data syncing, filtering and searching.",
+    tags: ["Full-Stack", "TypeScript", "Node.js", "A/B Test", "Angular"],
+    imageUrl: varsityStandingsImg,
   },
   {
     title: "Word Analytics",
@@ -112,7 +114,7 @@ export const projectsData = [
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
   },
-] as const;
+] as const
 
 export const skillsData = [
   "JavaScript",
@@ -135,4 +137,4 @@ export const skillsData = [
   "Cypress",
   "Prisma",
   "Framer Motion",
-] as const;
+] as const
