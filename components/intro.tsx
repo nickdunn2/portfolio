@@ -1,6 +1,7 @@
 'use client'
 
 import Image from "next/image"
+import profilePhoto from "@/public/profilePhoto.png"
 import { motion } from 'framer-motion'
 import Link from "next/link"
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs"
@@ -25,7 +26,7 @@ const Intro = () => {
             }}
           >
             <Image
-              src="https://media.licdn.com/dms/image/D5603AQGLpKxSMHxlTw/profile-displayphoto-shrink_400_400/0/1675551786853?e=1718841600&v=beta&t=lqDfbREsdlAYBpXKeFyQeKTlhHzIYvNfXJzgDLgEWEA"
+              src={profilePhoto}
               alt="Nick Dunn portrait"
               width="192"
               height="192"
