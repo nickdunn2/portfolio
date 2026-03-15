@@ -5,7 +5,7 @@ import tvRedesignImg from "@/public/tvRedesign.png"
 import varsityStandingsImg from "@/public/varsityStandings.png"
 import journalAppImg from "@/public/journalApp.png"
 import paymentFunnelImg from "@/public/paymentFunnel.png"
-import { RiJavascriptLine, RiReactjsFill } from "react-icons/ri"
+import { RiJavascriptLine, RiNewspaperLine, RiReactjsFill } from "react-icons/ri"
 
 export const links = [
   {
@@ -81,13 +81,22 @@ export const experiencesData = [
     date: "2016-2020",
   },
   {
-    title: "Senior Full-Stack Engineer",
+    title: "Senior Developer",
     location: "Austin, TX",
     description:
-      "I'm now a senior full-stack developer and team lead delivering server-driven UI endpoints for fully " +
-      "redesigned TV apps at FloSports. Using NestJS, Typescript & Redis.",
+      "Senior full-stack developer and team lead delivering server-driven UI endpoints for fully " +
+      "redesigned TV apps at FloSports. Used NestJS, Typescript & Redis.",
     icon: React.createElement(RiJavascriptLine),
-    date: "2020-present",
+    date: "2020-2025",
+  },
+  {
+    title: "Senior Full-Stack Engineer",
+    location: "Atlanta, GA",
+    description:
+      "I'm now a full-stack engineer at Document Crunch, working on AI-driven solutions for " +
+      "construction businesses. Using NestJS, PostgreSQL, React/Next.js and more.",
+    icon: React.createElement(RiNewspaperLine),
+    date: "2025-present",
   },
 ] as const
 
@@ -125,13 +134,17 @@ export const projectsData = [
 export const skillsData = [
   "JavaScript",
   "TypeScript",
+  "LLMs",
+  "Claude Code",
   "Node.js",
   "NestJS",
-  "Angular",
   "React",
   "Next.js",
-  "HTML",
-  "CSS",
+  "Python",
+  "FastAPI",
+  "PostgreSQL",
+  "Angular",
+  "HTML/CSS",
   "Tailwind",
   "RxJS",
   "Git",

@@ -34,7 +34,7 @@ const About = () => {
       </p>
       <p>
         <span className="italic">When I'm not coding</span>, I enjoy traveling, being outdoors (especially hiking or running),
-        and <span className="font-medium">learning new things</span> (like a foreign language!).
+        and <span className="font-medium">learning new things</span> (like a foreign language, chess, or even Rubik's Cubes!).
       </p>
     </motion.section>
   )

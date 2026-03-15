@@ -56,8 +56,8 @@ const Intro = () => {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hi, I'm Nick,</span> a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">8 years</span> of experience. I enjoy
+        <span className="font-bold">full-stack developer</span> with more than{" "}
+        <span className="font-bold">10 years</span> of experience. I enjoy
         building <span className="italic">sites, apps and APIs</span>. My focus is on{" "}
         <span className="underline">JavaScript & TypeScript</span>.
       </motion.h1>
@@ -67,7 +67,7 @@ const Intro = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="text-sm italic">This site was built with React, Next.js, Tailwind & Framer Motion.</span>
+        <span className="text-sm italic">This site was built (without AI!) using React, Next.js, Tailwind & Framer Motion.</span>
       </motion.p>
 
       <motion.div
