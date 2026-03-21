@@ -5,6 +5,7 @@ import tvRedesignImg from "@/public/tvRedesign.png"
 import varsityStandingsImg from "@/public/varsityStandings.png"
 import journalAppImg from "@/public/journalApp.png"
 import paymentFunnelImg from "@/public/paymentFunnel.png"
+import documentCrunchImg from "@/public/documentCrunch20.png"
 import { RiJavascriptLine, RiNewspaperLine, RiReactjsFill } from "react-icons/ri"
 
 export const links = [
@@ -101,6 +102,13 @@ export const experiencesData = [
 ] as const
 
 export const projectsData = [
+  {
+    title: "AI-Driven Document Workflows",
+    description:
+      "Full-stack contributor 'Document Crunch 2.0', delivering AI-powered document workflow automation for construction businesses.",
+    tags: ["NestJS", "PostgreSQL", "Next.js", "TypeScript"],
+    imageUrl: documentCrunchImg,
+  },
   {
     title: "TV App Redesign",
     description:
